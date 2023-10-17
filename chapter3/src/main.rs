@@ -3,11 +3,11 @@ use std::io::{BufWriter, Error, Write};
 
 #[tokio::main]
 async fn main() {
+    another_function_two(5, 5, '\u{2665}');
     write_to_file(256).await.expect("TODO: panic message");
-    another_function_two(5, 5, '\u{2665}').await;
 }
 
-async fn another_function_two(x: i32, y: i32, char: char) {
+fn another_function_two(x: i32, y: i32, char: char) {
     println!("{} {}", x * y, char);
 }
 
