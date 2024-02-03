@@ -32,10 +32,6 @@ fn main() {
     });
 
     let s = String::from("hello");
-    fn takes_ownership(some_string: &String) { // some_string comes into scope
-        println!("{}", some_string);
-    } // Here, some_string goes out of scope and `drop` is called. The backing
-    // memory is freed.
 
     // & is a reference
     // referencia, prepratka
@@ -54,3 +50,7 @@ fn main() {
 
     // println!("{}, {}", r1, r2); // will throw an error
 }
+fn takes_ownership(some_string: &String) { // some_string comes into scope
+    println!("{}", some_string);
+} // Here, some_string goes out of scope and `drop` is called. The backing
+// memory is freed.
