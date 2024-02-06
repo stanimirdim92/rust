@@ -1,5 +1,3 @@
-use std::ops::Range;
-
 #[warn(dead_code)]
 #[warn(unused_variables)]
 fn main() {
