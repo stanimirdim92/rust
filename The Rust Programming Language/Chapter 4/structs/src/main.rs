@@ -33,14 +33,24 @@ fn main() {
         email: String::from( "test@gmail.com"),
         phone
     };
+
     let mut person2 = person.clone();
     person2.name = String::from("John");
     person2.age =Some(31);
+
 
     println!("{:?} 1", person);
     println!("{} 2 ", person.name);
     println!("{} 222 ", person2.age.unwrap_or( 0)); // See below comment
     println!("{:?} 3", person.details(&person2));
+
+
+    let person3 = Person {
+        email: String::from("example@gmail.com"),
+        name: String::from("example@gmail.com"),
+        ..person2 // this will update/destruct only the needed elements
+    };
+    println!("{:?} person3", person3);
 
     match person2.age {
         Some(p) => println!("has value {p}"),
