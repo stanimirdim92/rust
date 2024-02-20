@@ -15,9 +15,11 @@ struct Person {
 }
 
 impl  Person {
-    fn details(&self, other: &Self) {
+    // & borrows the data
+    fn details(&mut self, other: &Self) {
         println!("{:?} 4", self);
         println!("{:?} 5", other);
+        self.name = "Sancho".parse().unwrap();
     }
 }
 
@@ -27,7 +29,7 @@ fn main() {
          number: 123456789111,
          description: "".to_string(),
      };
-    let person = Person{
+    let mut person = Person{
         name: "Jane".parse::<String>().unwrap(),
         age: None,
         email: String::from( "test@gmail.com"),
@@ -43,19 +45,20 @@ fn main() {
     println!("{} 2 ", person.name);
     println!("{} 222 ", person2.age.unwrap_or( 0)); // See below comment
     println!("{:?} 3", person.details(&person2));
+    println!("{:?} 3", person);
 
 
-    let person3 = Person {
-        email: String::from("example@gmail.com"),
-        name: String::from("example@gmail.com"),
-        ..person2 // this will update/destruct only the needed elements
-    };
-    println!("{:?} person3", person3);
-
-    match person2.age {
-        Some(p) => println!("has value {p}"),
-        None => println!("has no value"),
-    }
+    // let person3 = Person {
+    //     email: String::from("example@gmail.com"),
+    //     name: String::from("example@gmail.com"),
+    //     ..person2 // this will update/destruct only the needed elements
+    // };
+    println!("{:?} person3", person2);
+    //
+    // match person2.age {
+    //     Some(p) => println!("has value {p}"),
+    //     None => println!("has no value"),
+    // }
 
 
 }
