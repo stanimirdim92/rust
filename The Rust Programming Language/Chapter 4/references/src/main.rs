@@ -22,7 +22,7 @@ fn main() {
 
     let ss =  s.clone();
  //   let ss2 = &mut s;
-    println!("{}, {}",ss.to_string(), s);
+    println!("{}, {}",ss, s);
     change(&mut s);
 
     let _reference_to_nothing = dangle();

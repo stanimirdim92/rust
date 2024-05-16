@@ -1,9 +1,8 @@
-
-#[derive(Debug,  Clone)]
+#[derive(Debug, Clone)]
 struct Phone {
     code: u16,
     number: u64,
-    description: String
+    description: String,
 }
 
 #[derive(Debug, Clone)]
@@ -11,10 +10,10 @@ struct Person {
     name: String,
     age: Option<u8>,
     email: String,
-    phone: Phone
+    phone: Phone,
 }
 
-impl  Person {
+impl Person {
     // & borrows the data
     fn details(&mut self, other: &Self) {
         println!("{:?} 4", self);
@@ -24,36 +23,35 @@ impl  Person {
 }
 
 fn main() {
-     let  phone = Phone {
-         code: 359,
-         number: 123456789111,
-         description: "".to_string(),
-     };
-    let mut person = Person{
+    let phone = Phone {
+        code: 359,
+        number: 123456789111,
+        description: "".to_string(),
+    };
+    let mut person = Person {
         name: "Jane".parse::<String>().unwrap(),
         age: None,
-        email: String::from( "test@gmail.com"),
-        phone
+        email: String::from("test@gmail.com"),
+        phone,
     };
 
     let mut person2 = person.clone();
     person2.name = String::from("John");
-    person2.age =Some(31);
+    person2.age = Some(31);
 
 
     println!("{:?} 1", person);
     println!("{} 2 ", person.name);
-    println!("{} 222 ", person2.age.unwrap_or( 0)); // See below comment
+    println!("{} 222 ", person2.age.unwrap_or(0)); // See below comment
     println!("{:?} 3", person.details(&person2));
     println!("{:?} 3", person);
-
 
     // let person3 = Person {
     //     email: String::from("example@gmail.com"),
     //     name: String::from("example@gmail.com"),
     //     ..person2 // this will update/destruct only the needed elements
     // };
-    println!("{:?} person3", person2);
+    // println!("{:?} person3", person3);
     //
     // match person2.age {
     //     Some(p) => println!("has value {p}"),
@@ -61,6 +59,11 @@ fn main() {
     // }
 
 
+
+    struct Color(i32, i32, i32);
+
+    let color = Color(0, 1, 0);
+    println!("{}", color.1)
 }
 
 
