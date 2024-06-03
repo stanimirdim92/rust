@@ -1,7 +1,6 @@
-use crate::garden::*;
-use crate::garden::vegetables;
+use garden::*;
 
-pub mod garden;
+mod garden;
 
 
 fn main() {
