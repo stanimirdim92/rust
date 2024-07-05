@@ -5,13 +5,13 @@ use clap::Parser;
 /**
  * Minimum offset to start look from
  */
-const PEIQ_STARTING_OFFSET: i32 = 80282;
-const PEIQ_STARTING_DATE: &str = "2024-05-31";
+const _PEIQ_STARTING_OFFSET: i32 = 80282;
+const _PEIQ_STARTING_DATE: &str = "2024-05-31";
 
 /**
  * PEIQ has a hard limit of 100 results per api call.
  */
-const PEIQ_QUERY_LIMIT: i32 = 100;
+const _PEIQ_QUERY_LIMIT: i32 = 100;
 
 #[derive(clap::ValueEnum, Clone, Debug)]
 enum ENV {
@@ -29,9 +29,6 @@ struct Args {
     env: ENV,
 }
 
-// protected $signature = 'ads:import:peiq
-// {ftp_user : FTP account}
-// {env=PROD : Possible values are TEST and PROD}
 // {ids?* : Import a list of ads manually}
 // {--S|--search-start : search for an offset from the start}
 // ';
@@ -39,7 +36,5 @@ struct Args {
 fn main() {
 
     let args = Args::parse();
-dbg!(args);
-
-
+    dbg!(args);
 }

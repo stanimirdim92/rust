@@ -4,12 +4,14 @@ pub(crate) mod nordkurier_sm_ads;
 pub(crate) mod schwaebische_rpa;
 
 #[derive(Debug)]
+#[allow(dead_code)]
 pub(crate) struct UserDetails<'a> {
     token: &'a str,
     offset: i32
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 pub(crate) struct UserConfig<'a> {
     event: &'a str,
     url: &'a str,
@@ -17,6 +19,7 @@ pub(crate) struct UserConfig<'a> {
 }
 
 
+#[allow(dead_code)]
 fn users_test() -> HashMap<&'static str, UserDetails<'static>> {
     let nordkurier_sm_ads: UserDetails = UserDetails {
         token: "02-83739cccd4ji0dxpyupra6hnbd66~v*zszp4bum9umeyshgr7s4r3p3e8dyktqsvl",
@@ -63,6 +66,7 @@ fn users_prod() -> HashMap<&'static str, UserDetails<'static>> {
     ])
 }
 
+#[allow(dead_code)]
 pub(crate) fn users() -> HashMap<&'static str, UserConfig<'static>> {
     let mut users_config: HashMap<&str, UserConfig> = HashMap::new();
 
@@ -80,6 +84,7 @@ pub(crate) fn users() -> HashMap<&'static str, UserConfig<'static>> {
     users_config
 }
 
+#[allow(dead_code)]
 pub(crate) fn ad_is_ready_for_transfer(ads_info: &mut serde_json::Value) -> bool {
 
     if ads_info.get("online_publish").is_none() {

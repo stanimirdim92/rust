@@ -1,8 +1,10 @@
 
+#[allow(dead_code)]
 pub(crate) fn ads_lookup_days_ahead() -> i8 {
     return 1;
 }
 
+#[allow(dead_code)]
 pub(crate) fn ad_is_ready_for_transfer(ads_info: &mut serde_json::Value) -> bool {
     let category_id = ads_info["category"]["id"][0].as_str().unwrap_or("").to_string();
 
