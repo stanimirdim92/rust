@@ -1,4 +1,4 @@
-use std::fmt::Display;
+use std::fmt;
 
 trait Shape {
     fn shape(&self) -> String;
@@ -32,13 +32,13 @@ struct Point<T, U> {
     y: U,
 }
 
-impl<T: Display, U: Display> Display for Point<T, U> {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+impl<T: fmt::Display, U: fmt::Display> fmt::Display for Point<T, U> {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "({}, {})", self.x, self.y)
     }
 }
 
-impl<T: Display + Clone, U: Display + Clone> Point<T, U> {
+impl<T: fmt::Display + Clone, U: fmt::Display + Clone> Point<T, U> {
     fn x(&self) -> &T {
         &self.x
     }
@@ -51,8 +51,8 @@ impl<T: Display + Clone, U: Display + Clone> Point<T, U> {
         Self { x, y }
     }
 
-    fn show(&self) -> String {
-        format!("({}, {})", self.x, self.y)
+    fn show<'a>(&self) -> String {
+        format!("({}, {})", &self.x, &self.y)
     }
 }
 
@@ -68,8 +68,8 @@ fn main() {
 
     println!("{}", point);
     println!("{}", point.x());
-    println!("{}", point.y());
     println!("{}", point.show());
+    println!("{}", point.y());
 }
 
 
