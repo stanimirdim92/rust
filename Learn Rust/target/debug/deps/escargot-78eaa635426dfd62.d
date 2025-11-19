@@ -1,0 +1,17 @@
+/var/www/html/rust/Learn Rust/target/debug/deps/libescargot-78eaa635426dfd62.rmeta: /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/lib.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/build.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/cargo.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/msg.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/run.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/test.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/error.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/format/mod.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/format/diagnostic.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/format/test.rs /var/www/html/rust/Learn\ Rust/target/debug/build/escargot-89556b4f92916639/out/current_target.txt
+
+/var/www/html/rust/Learn Rust/target/debug/deps/escargot-78eaa635426dfd62.d: /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/lib.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/build.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/cargo.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/msg.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/run.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/test.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/error.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/format/mod.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/format/diagnostic.rs /home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/format/test.rs /var/www/html/rust/Learn\ Rust/target/debug/build/escargot-89556b4f92916639/out/current_target.txt
+
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/lib.rs:
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/build.rs:
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/cargo.rs:
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/msg.rs:
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/run.rs:
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/test.rs:
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/error.rs:
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/format/mod.rs:
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/format/diagnostic.rs:
+/home/stanimir/.cargo/registry/src/index.crates.io-6f17d22bba15001f/escargot-0.5.13/src/format/test.rs:
+/var/www/html/rust/Learn\ Rust/target/debug/build/escargot-89556b4f92916639/out/current_target.txt:
+
+# env-dep:OUT_DIR=/var/www/html/rust/Learn Rust/target/debug/build/escargot-89556b4f92916639/out
