@@ -8,7 +8,7 @@ files:
     visible: true
     placeholders:
       - offset: 21
-        length: 5
+        length: 9
         placeholder_text: /*insert here missing part(s)*/
         initial_state:
           length: 31

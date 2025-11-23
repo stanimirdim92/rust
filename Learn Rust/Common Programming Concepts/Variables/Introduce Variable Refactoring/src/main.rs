@@ -1,5 +1,6 @@
 fn main() {
-    let year = 1993;
+    let year_1993 = 1993;
+    let year = year_1993;
     let ten_years_ago = year - 10;
     let five_years_ago = year - 5;
     let one_year_ago = year - 1;

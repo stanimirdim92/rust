@@ -5,7 +5,7 @@ files:
     visible: true
     placeholders:
       - offset: 10
-        length: 278
+        length: 309
         placeholder_text: |-
           {
               let ten_years_ago = 1993 - 10;

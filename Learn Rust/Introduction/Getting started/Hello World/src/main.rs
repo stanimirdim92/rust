@@ -1,3 +1,5 @@
 fn main() {
-    // put your code here to launch it
+    println!("Hello, world!");
+    let a = 5;
+    println!("A: {}", a);
 }
